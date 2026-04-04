@@ -1,0 +1,8 @@
+ * Serving Flask app 'ephemeral_api'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5056
+ * Running on http://10.1.1.110:5056
+[33mPress CTRL+C to quit[0m
+10.1.1.108 - - [04/Apr/2026 13:26:28] "POST /filter HTTP/1.1" 200 -
