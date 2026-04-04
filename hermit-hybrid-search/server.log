@@ -1,0 +1,89 @@
+2026-03-22 13:34:45,199 [INFO] Starting Hermit RAG Server on 0.0.0.0:5055
+2026-03-22 13:34:45,199 [INFO] Loading embedding model: all-MiniLM-L6-v2
+2026-03-22 13:34:45,200 [INFO] Use pytorch device_name: cpu
+2026-03-22 13:34:45,200 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-03-22 13:34:45,689 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-22 13:34:45,690 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-22 13:34:45,743 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-22 13:34:46,037 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:46,092 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-22 13:34:46,368 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:46,422 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-22 13:34:46,700 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:46,757 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-22 13:34:47,037 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:47,090 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-22 13:34:47,364 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:47,417 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-22 13:34:47,693 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-22 13:34:47,974 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:48,026 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10699.76it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+2026-03-22 13:34:48,385 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:48,439 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-22 13:34:48,728 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:48,780 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-22 13:34:49,065 [INFO] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-22 13:34:49,357 [INFO] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-22 13:34:49,779 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:49,831 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-22 13:34:50,163 [INFO] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-22 13:34:50,214 [INFO] Loading cross-encoder reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-03-22 13:34:50,489 [INFO] HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:50,813 [INFO] HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:50,865 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 9445.01it/s]
+[1mBertForSequenceClassification LOAD REPORT[0m from: cross-encoder/ms-marco-MiniLM-L-6-v2
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+bert.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+2026-03-22 13:34:51,186 [INFO] HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:51,503 [INFO] HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:51,554 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-03-22 13:34:51,832 [INFO] HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:52,112 [INFO] HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:52,165 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-22 13:34:52,439 [INFO] HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:52,729 [INFO] HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-22 13:34:53,008 [INFO] HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:53,347 [INFO] HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-22 13:34:53,662 [INFO] HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:53,938 [INFO] HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:53,991 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/README.md "HTTP/1.1 200 OK"
+2026-03-22 13:34:53,992 [INFO] Use pytorch device: cpu
+2026-03-22 13:34:54,276 [INFO] HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-03-22 13:34:54,558 [INFO] HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-22 13:34:54,605 [INFO] Initialising ChromaDB (persistent) at /home/hermit/hermit-hybrid-search/chroma_db
+2026-03-22 13:34:54,692 [INFO] Scanning 30 files in /home/hermit/memory_files
+2026-03-22 13:34:54,710 [INFO] BM25 index built: 1110 chunks
+2026-03-22 13:34:54,724 [INFO] ChromaDB up-to-date (1110 chunks), skipping embed
+2026-03-22 13:34:54,725 [INFO] Ready. Stats: {"total_chunks": 1110, "chroma_count": 1110, "files_indexed": 30, "memory_dir": "/home/hermit/memory_files"}
+ * Serving Flask app 'server'
+ * Debug mode: off
+2026-03-22 13:34:54,726 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5055
+ * Running on http://10.1.1.110:5055
+2026-03-22 13:34:54,726 [INFO] [33mPress CTRL+C to quit[0m
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 72.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.25it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.25it/s]
+2026-03-22 13:34:59,860 [INFO] 10.1.1.108 - - [22/Mar/2026 13:34:59] "POST /search HTTP/1.1" 200 -
+2026-03-22 13:46:59,837 [INFO] 127.0.0.1 - - [22/Mar/2026 13:46:59] "GET /stats HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 191.63it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.41it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.40it/s]
+2026-03-22 13:47:02,999 [INFO] 127.0.0.1 - - [22/Mar/2026 13:47:02] "POST /search HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 56.62it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s]
+2026-03-22 13:56:15,303 [INFO] 127.0.0.1 - - [22/Mar/2026 13:56:15] "POST /search HTTP/1.1" 200 -
+2026-03-22 14:02:21,939 [INFO] 127.0.0.1 - - [22/Mar/2026 14:02:21] "GET /health HTTP/1.1" 200 -

@@ -1,0 +1,9 @@
+chromadb
+sentence-transformers
+rank-bm25
+pymupdf
+torch
+tqdm
+flask
+pydantic
+numpy
