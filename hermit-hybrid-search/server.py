@@ -21,7 +21,7 @@ import chromadb
 # Config
 # ---------------------------------------------------------------------------
 MEMORY_DIR = os.path.expanduser("~/memory_files")
-CHROMA_DIR = os.path.expanduser("~/hermit-hybrid-search/chroma_db")
+CHROMA_DIR = os.path.expanduser("~/openclaw-tools/hermit-hybrid-search/chroma_db")
 EMBED_MODEL = "all-MiniLM-L6-v2"
 RERANKER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 COLLECTION_NAME = "hermit_memory"
