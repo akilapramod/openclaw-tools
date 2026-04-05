@@ -175,6 +175,19 @@ def search():
     results = retriever.search(query, top_k=top_k)
     return jsonify({"query": query, "results": results})
 
+@app.route("/reindex", methods=["POST"])
+def reindex():
+    global retriever
+    try:
+        retriever = HermitHybridRetriever()
+        return jsonify({"status": "ok", "stats": retriever.stats()})
+    except Exception as e:
+        return jsonify({"status": "error", "error": str(e)}), 500
+
+@app.route("/stats")
+def stats_route():
+    return jsonify(retriever.stats())
+
 if __name__ == "__main__":
     retriever = HermitHybridRetriever()
     app.run(host=HOST, port=PORT, debug=False)
