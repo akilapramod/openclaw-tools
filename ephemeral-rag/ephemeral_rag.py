@@ -120,6 +120,7 @@ def rerank(query: str, candidates: list[tuple[int, float]], chunks: list[Chunk],
     norm = np.linalg.norm(q_vec)
     if norm > 0: q_vec /= norm
     pre_filtered = []
+    initial_count = len(candidates)
     for cid, _ in candidates:
         chunk_vec = index.embeddings[cid]
         sim = float(np.dot(q_vec, chunk_vec))
