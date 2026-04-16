@@ -1,4 +1,6 @@
-from __future__ import annotations
+import os
+
+new_code = r"""from __future__ import annotations
 import re
 import textwrap
 from dataclasses import dataclass, field
@@ -194,3 +196,7 @@ class RAGPipeline:
 
 def run_ephemeral_rag(documents, research_question, config=None):
     return RAGPipeline(config).run(documents, research_question)
+"""
+
+with open('/home/hermit/openclaw-tools/ephemeral-rag/ephemeral_rag.py', 'w') as f:
+    f.write(new_code.strip() + '\n')
