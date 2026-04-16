@@ -1,5 +1,6 @@
+import sys
 from flask import Flask, request, jsonify
-from ephemeral_rag import run_ephemeral_rag
+from ephemeral_rag import run_ephemeral_rag, RAGConfig
 
 app = Flask(__name__)
 
@@ -15,21 +16,23 @@ def filter_documents():
     data = request.json
     if not data or 'documents' not in data or 'research_question' not in data:
         return jsonify({"error": "Missing 'documents' or 'research_question' in payload"}), 400
-
-    top_k = data.get('top_k', 5)       # Fix 2: top_k param (default 5)
-    min_ce_score = data.get('min_ce_score', 0.1)  # Fix 2: min cross-encoder threshold
-
+    
+    top_k = data.get('top_k', 5)
+    
     try:
+        config = RAGConfig(
+            rerank_top_k=top_k
+        )
+
         filtered_text = run_ephemeral_rag(
             documents=data['documents'],
             research_question=data['research_question'],
-            top_k=top_k,
-            min_ce_score=min_ce_score
+            config=config
         )
+        sys.stdout.flush() # Force log output
         return jsonify({"filtered_text": filtered_text})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    # Running on port 5056 to avoid conflict with the Memory RAG currently on 5055
     app.run(host='0.0.0.0', port=5056)
