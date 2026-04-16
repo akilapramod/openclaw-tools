@@ -1,6 +1,14 @@
 import sys
+import logging
 from flask import Flask, request, jsonify
 from ephemeral_rag import run_ephemeral_rag, RAGConfig
+
+# Force logs to stdout/stderr for journalctl visibility
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(message)s',
+    force=True
+)
 
 app = Flask(__name__)
 
@@ -29,9 +37,9 @@ def filter_documents():
             research_question=data['research_question'],
             config=config
         )
-        sys.stdout.flush() # Force log output
         return jsonify({"filtered_text": filtered_text})
     except Exception as e:
+        print(f"[RAG] Error: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
