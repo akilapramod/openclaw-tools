@@ -30,7 +30,8 @@ class TestHybridRetrieverIntegration(unittest.TestCase):
             {"id": "doc1", "text": "I love books.", "metadata": {"source": "test.pdf", "page": 1}}
         ]
         
-        results = self.retriever.retrieve("love", top_k=1)
+        # Pass a low min_score threshold to prevent mock results from being filtered out
+        results = self.retriever.retrieve("love", top_k=1, min_score=-100.0)
         
         self.assertEqual(len(results), 1)
         self.assertEqual(results[0]["id"], "doc1")
