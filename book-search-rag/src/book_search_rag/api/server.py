@@ -4,19 +4,19 @@ import logging
 from flask import Flask, request, jsonify
 
 # Add src/ to path for internal imports
-sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
-from core.retriever import HybridRetriever
-from storage.vector import VectorStore
-from storage.keyword import KeywordStore
-from api.schemas import SearchRequest, SearchResponse
+from book_search_rag.core.retriever import HybridRetriever
+from book_search_rag.storage.vector import VectorStore
+from book_search_rag.storage.keyword import KeywordStore
+from book_search_rag.api.schemas import SearchRequest, SearchResponse
 
 app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("book-rag.api")
 
 # Initialize global components
-base_path = os.path.join(os.path.dirname(__file__), "../..")
+base_path = os.path.join(os.path.dirname(__file__), "../../..")
 db_path = os.path.join(base_path, "data/processed/chroma_db")
 keyword_path = os.path.join(base_path, "data/processed/keyword_store.pkl")
 

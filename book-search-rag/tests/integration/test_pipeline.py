@@ -6,7 +6,7 @@ from unittest.mock import MagicMock
 # Add src/ to path for internal imports
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../src")))
 
-from core.retriever import HybridRetriever
+from book_search_rag.core.retriever import HybridRetriever
 
 class TestHybridRetrieverIntegration(unittest.TestCase):
     """Integration-style tests for the HybridRetriever logic (using mocks for external stores)."""

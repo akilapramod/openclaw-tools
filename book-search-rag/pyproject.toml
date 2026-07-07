@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "book-search-rag"
+version = "0.1.0"
+description = "Hybrid RAG search for Books"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pymupdf",
+    "chromadb",
+    "sentence-transformers",
+    "rank-bm25",
+    "flask",
+    "pydantic",
+    "torch",
+    "tqdm"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

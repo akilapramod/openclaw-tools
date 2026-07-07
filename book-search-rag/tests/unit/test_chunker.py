@@ -5,7 +5,7 @@ import unittest
 # Add src/ to path for internal imports
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../src")))
 
-from ingestion.chunker import SemanticChunker
+from book_search_rag.ingestion.chunker import SemanticChunker
 
 class TestSemanticChunker(unittest.TestCase):
     def setUp(self):

@@ -11,11 +11,11 @@ from pathlib import Path
 # Add src/ to path for internal imports
 sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 
-from core.retriever import HybridRetriever
-from ingestion.chunker import SemanticChunker
-from ingestion.parser import DocumentIngestor
-from storage.vector import VectorStore
-from storage.keyword import KeywordStore
+from book_search_rag.core.retriever import HybridRetriever
+from book_search_rag.ingestion.chunker import SemanticChunker
+from book_search_rag.ingestion.parser import DocumentIngestor
+from book_search_rag.storage.vector import VectorStore
+from book_search_rag.storage.keyword import KeywordStore
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 log = logging.getLogger("book-rag")
